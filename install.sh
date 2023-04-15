@@ -46,6 +46,9 @@ arch_pacman() {
         zsh
         neovim
         docker
+        docker-compose
+        python
+        python-pip
         jdk8-openjdk
         jdk11-openjdk
         ttf-inconsolata-nerd
