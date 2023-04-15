@@ -29,7 +29,7 @@ Vagrant.configure("2") do |config|
   # Official Arch linux distribution https://archlinux.org/download/
   config.vm.box = "archlinux/archlinux"
   config.vm.hostname = "Arch"
-  config.disksize.size = '10GB' # MODIFY
+  config.disksize.size = "10GB" # MODIFY
   
   config.vm.provider "virtualbox" do |vb|
     vb.name = "borja" # MODIFY
@@ -39,7 +39,7 @@ Vagrant.configure("2") do |config|
     vb.cpus = 4 # MODIFY
     vb.memory = "8192"  # MODIFY
 
-    vb.customize ['modifyvm', :id, '--clipboard-mode', 'bidirectional']
+    vb.customize ["modifyvm", :id, "--clipboard-mode", "bidirectional"]
     vb.customize ["modifyvm", :id, "--vram", "64"]
   end
 
